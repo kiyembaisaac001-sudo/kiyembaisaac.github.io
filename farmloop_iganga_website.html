@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FarmLoop Iganga is an integrated agricultural project in Bulowoza Village, Iganga District, Uganda, focused on crop production, poultry, goats, pigs and sustainable mixed farming.">
+<meta name="theme-color" content="#173d2b">
+<title>FarmLoop Iganga | Growing Food, Building Resilience</title>
+<style>
+:root{--forest:#173d2b;--green:#2f7046;--lime:#c8df83;--cream:#f6f4e9;--ink:#203329;--muted:#65736a;--white:#fff;--line:#e3e8dc;--gold:#e5b95d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit}.wrap{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.04em;color:var(--forest);font-size:1.22rem}.brand-mark{width:40px;height:40px;border-radius:13px;background:var(--forest);color:var(--lime);display:grid;place-items:center;font-size:1.3rem}.navlinks{display:flex;align-items:center;gap:26px}.navlinks a{text-decoration:none;color:#4b5a50;font-size:.93rem;font-weight:650}.navlinks a:hover{color:var(--green)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 20px;font-weight:750;transition:.2s}.nav-cta,.btn-primary{background:var(--forest);color:#fff}.nav-cta:hover,.btn-primary:hover{background:var(--green);transform:translateY(-1px)}.menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--forest)}
+.hero{background:var(--forest);color:white;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(200,223,131,.18);border-radius:50%;right:-130px;top:-190px;box-shadow:0 0 0 55px rgba(200,223,131,.035),0 0 0 110px rgba(200,223,131,.025)}.hero-grid{min-height:610px;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:50px;padding:78px 0;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;font-weight:800;color:var(--lime)}.eyebrow:before{content:"";width:26px;height:2px;background:var(--lime)}h1{font-size:clamp(2.8rem,5.5vw,5.2rem);line-height:1.02;letter-spacing:-.06em;margin:22px 0}.hero p{font-size:1.12rem;color:#d7e2d8;max-width:570px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn-light{border:1px solid rgba(255,255,255,.45);color:#fff}.btn-light:hover{background:rgba(255,255,255,.1)}.hero-note{font-size:.84rem!important;color:#bdcdbf!important;margin-top:22px}.farm-art{min-height:390px;border-radius:28px;background:linear-gradient(160deg,#d8e7b2 0%,#9cbd76 42%,#49784c 43%,#244c36 100%);position:relative;overflow:hidden;box-shadow:0 24px 65px #071d1255}.sun{position:absolute;width:90px;height:90px;border-radius:50%;background:#f6d77d;top:48px;right:58px;box-shadow:0 0 55px #f6d77d88}.hill{position:absolute;bottom:-90px;width:120%;height:240px;border-radius:50% 50% 0 0;background:#376c43;left:-10%;transform:rotate(-8deg)}.hill.two{bottom:-135px;background:#214b35;transform:rotate(8deg);left:-2%}.furrows{position:absolute;bottom:0;left:0;right:0;height:140px;background:repeating-linear-gradient(165deg,transparent 0 17px,#b5ce82 18px 20px,transparent 21px 37px);opacity:.55}.crop{position:absolute;bottom:75px;font-size:4rem;filter:drop-shadow(0 5px 3px #153b2877)}.crop.c1{left:15%}.crop.c2{left:42%;bottom:102px}.crop.c3{right:15%;font-size:3.5rem}.art-label{position:absolute;left:22px;bottom:20px;background:#fff;color:var(--forest);padding:10px 15px;border-radius:12px;font-size:.82rem;font-weight:800;box-shadow:0 8px 24px #163c2c33}
+.stats{background:var(--cream);padding:25px 0}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.stat{text-align:center;padding:10px}.stat strong{display:block;color:var(--forest);font-size:1.6rem;letter-spacing:-.04em}.stat span{font-size:.85rem;color:var(--muted)}
+section{padding:86px 0}.section-head{max-width:690px;margin-bottom:38px}.kicker{color:var(--green);font-size:.75rem;font-weight:850;text-transform:uppercase;letter-spacing:.15em}.section-head h2{font-size:clamp(2rem,3.5vw,3.1rem);letter-spacing:-.05em;line-height:1.1;color:var(--forest);margin:12px 0}.section-head p{color:var(--muted);font-size:1.04rem;margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}.about-panel{background:var(--cream);border-radius:24px;padding:34px}.about-panel h3{font-size:1.35rem;color:var(--forest);margin:0 0 12px}.about-panel p{color:var(--muted);margin:0}.checklist{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}.checklist li{display:flex;gap:12px;align-items:flex-start}.check{width:24px;height:24px;flex:0 0 24px;border-radius:50%;background:#dce9c5;color:var(--forest);display:grid;place-items:center;font-weight:900;font-size:.8rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:20px;padding:25px;background:#fff;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 15px 35px #193e2b12}.card-icon{width:52px;height:52px;border-radius:15px;background:var(--cream);display:grid;place-items:center;font-size:1.65rem}.card h3{margin:17px 0 7px;color:var(--forest);font-size:1.18rem}.card p{margin:0;color:var(--muted);font-size:.94rem}
+.loop{background:var(--cream)}.loop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.loop-step{background:#fff;border-radius:18px;padding:22px}.loop-step .num{color:var(--green);font-size:.78rem;font-weight:900;letter-spacing:.12em}.loop-step h3{color:var(--forest);margin:9px 0 6px}.loop-step p{color:var(--muted);font-size:.9rem;margin:0}
+.land-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.land-visual{background:var(--forest);border-radius:24px;padding:28px;color:#fff}.land-visual h3{margin:0 0 8px}.land-visual p{color:#d4dfd5;margin:0 0 20px;font-size:.9rem}.bar-row{margin:15px 0}.bar-meta{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:6px}.bar{height:9px;border-radius:20px;background:#ffffff30;overflow:hidden}.bar i{display:block;height:100%;background:var(--lime);border-radius:20px}.land-note{font-size:.82rem;color:#c6d4c8;margin-top:20px}.impact-list{display:grid;gap:16px}.impact-item{display:flex;gap:14px}.impact-item b{display:block;color:var(--forest);margin-bottom:2px}.impact-item p{margin:0;color:var(--muted);font-size:.92rem}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.phase{border-top:3px solid var(--green);padding:17px 16px 0;background:#fbfcf9;border-radius:0 0 15px 15px}.phase span{font-size:.74rem;color:var(--green);font-weight:850;text-transform:uppercase;letter-spacing:.1em}.phase h3{color:var(--forest);font-size:1.05rem;margin:8px 0}.phase p{font-size:.88rem;color:var(--muted);margin:0}
+.cta{background:var(--forest);color:#fff;padding:70px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em;line-height:1.1;margin:10px 0}.cta p{color:#d4dfd5;max-width:630px;margin:0}.cta .btn{background:var(--lime);color:var(--forest);white-space:nowrap}.cta .btn:hover{background:#d9eca0}
+footer{background:#102e20;color:#d4dfd5;padding:38px 0}.footer-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}.footer-brand{color:#fff;font-weight:850;font-size:1.1rem}.footer-grid p{margin:8px 0;color:#aebfb2;font-size:.87rem}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{color:#d4dfd5;text-decoration:none;font-size:.88rem}.copyright{border-top:1px solid #ffffff20;margin-top:25px;padding-top:18px;color:#9db0a1;font-size:.78rem}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-grid,.about-grid,.land-grid{grid-template-columns:1fr}.hero-grid{padding:60px 0}.farm-art{min-height:310px}.cards{grid-template-columns:repeat(2,1fr)}.loop-grid,.timeline{grid-template-columns:repeat(2,1fr)}.cta-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){section{padding:64px 0}.stats-grid{gap:4px}.stat strong{font-size:1.3rem}.stat span{font-size:.75rem}.cards,.loop-grid,.timeline{grid-template-columns:1fr}.farm-art{min-height:260px}.about-panel{padding:24px}.footer-grid{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="brand-mark">🌱</span>FarmLoop Iganga</a>
+  <nav class="navlinks" id="navlinks"><a href="#about">About</a><a href="#farming">Our Farming</a><a href="#sustainability">Sustainability</a><a href="#plan">Our Plan</a><a href="#contact">Contact</a></nav>
+  <a class="nav-cta" href="#contact">Partner with us</a>
+  <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="eyebrow">Integrated agriculture · Eastern Uganda</span>
+   <h1>Growing food.<br>Building resilience.</h1>
+   <p>FarmLoop Iganga is an integrated agricultural project in Bulowoza Village, bringing crop production and livestock farming together to support food security, livelihoods and more sustainable use of farm resources.</p>
+   <div class="hero-actions"><a class="btn btn-primary" href="#about">Discover the project</a><a class="btn btn-light" href="#contact">Support the farm</a></div>
+   <p class="hero-note">Bulowoza Village · Iganga District · Uganda</p>
+  </div>
+  <div class="farm-art" role="img" aria-label="Illustration of green crop fields and a sunny rural landscape">
+   <div class="sun"></div><div class="hill"></div><div class="hill two"></div><div class="furrows"></div>
+   <span class="crop c1">🌽</span><span class="crop c2">🌿</span><span class="crop c3">🌾</span>
+   <div class="art-label">34 acres of agricultural opportunity</div>
+  </div>
+ </div>
+</section>
+<div class="stats"><div class="wrap stats-grid">
+ <div class="stat"><strong>34 acres</strong><span>Land available to the project</span></div>
+ <div class="stat"><strong>12 months</strong><span>Proposed expansion period</span></div>
+ <div class="stat"><strong>Iganga, Uganda</strong><span>Rooted in the local community</span></div>
+</div></div>
+<section id="about"><div class="wrap about-grid">
+ <div><div class="section-head"><span class="kicker">Who we are</span><h2>A farm designed to make every resource count.</h2><p>FarmLoop Iganga is an ongoing, individually led agricultural initiative by Kiyemba Isaac. The project aims to strengthen an integrated farm that combines food crops, poultry and livestock on available land in Bulowoza Village.</p></div>
+ <p style="color:var(--muted)">The long-term vision is to build a productive and resilient enterprise that contributes to local food availability, creates opportunities for work and demonstrates how crop and animal production can complement one another.</p></div>
+ <div class="about-panel"><h3>Our project priorities</h3><p>Practical investment in production, farm management and responsible use of natural resources.</p>
+  <ul class="checklist"><li><span class="check">✓</span><span>Improve maize, cassava and beans production.</span></li><li><span class="check">✓</span><span>Strengthen goat, pig and poultry enterprises.</span></li><li><span class="check">✓</span><span>Improve animal housing, feeding and veterinary care.</span></li><li><span class="check">✓</span><span>Promote soil improvement, water management and reduced farm waste.</span></li></ul>
+ </div>
+</div></section>
+<section id="farming" style="background:#fbfcf9"><div class="wrap">
+ <div class="section-head"><span class="kicker">What we do</span><h2>Different farm activities. One connected system.</h2><p>The project brings together food crops and animal enterprises to diversify production and create opportunities for farm resources to be reused responsibly.</p></div>
+ <div class="cards">
+  <article class="card"><div class="card-icon">🌽</div><h3>Maize production</h3><p>Grow maize for household food needs and potential commercial markets, with suitable crop residues considered for supplementary livestock feed.</p></article>
+  <article class="card"><div class="card-icon">🌱</div><h3>Cassava cultivation</h3><p>Develop cassava production as an additional source of food and income, with processing and marketing opportunities explored where practical.</p></article>
+  <article class="card"><div class="card-icon">🫘</div><h3>Beans production</h3><p>Produce beans to support household nutrition, income generation and diversified cropping.</p></article>
+  <article class="card"><div class="card-icon">🐐</div><h3>Goat rearing</h3><p>Expand goat production through suitable housing, feeding, breeding practices and veterinary support.</p></article>
+  <article class="card"><div class="card-icon">🐖</div><h3>Piggery</h3><p>Strengthen pig production with improved housing, hygiene, feeding, breeding and animal-health management.</p></article>
+  <article class="card"><div class="card-icon">🐔</div><h3>Poultry keeping</h3><p>Develop hen production for eggs and poultry meat through appropriate housing, feeding, clean water and biosecurity.</p></article>
+ </div>
+</div></section>
+<section class="loop" id="sustainability"><div class="wrap">
+ <div class="section-head"><span class="kicker">The FarmLoop approach</span><h2>Put the farm cycle to work.</h2><p>Integrated farming creates opportunities for crops and livestock to support each other. These are practices the project intends to strengthen as it develops.</p></div>
+ <div class="loop-grid">
+  <div class="loop-step"><span class="num">01 / CROPS</span><h3>Grow food crops</h3><p>Produce maize, cassava and beans for food and potential sales.</p></div>
+  <div class="loop-step"><span class="num">02 / LIVESTOCK</span><h3>Raise animals</h3><p>Develop poultry, goat and pig enterprises with appropriate care.</p></div>
+  <div class="loop-step"><span class="num">03 / REUSE</span><h3>Reuse farm resources</h3><p>Use properly composted manure for soil improvement and suitable crop residues as supplementary feed.</p></div>
+  <div class="loop-step"><span class="num">04 / REINVEST</span><h3>Build the next cycle</h3><p>Maintain production and financial records, then reinvest part of farm income where possible.</p></div>
+ </div>
+</div></section>
+<section><div class="wrap land-grid">
+ <div><div class="section-head"><span class="kicker">Land use plan</span><h2>Planning the 34 acres thoughtfully.</h2><p>The proposal includes a preliminary land-use arrangement. Actual allocations will be adjusted to soil conditions, water access, infrastructure and the existing farm layout.</p></div>
+ <div class="impact-list">
+  <div class="impact-item"><span class="check">✓</span><div><b>Better land utilization</b><p>Plan space for crop production, livestock and future rotation.</p></div></div>
+  <div class="impact-item"><span class="check">✓</span><div><b>Diversified farm income</b><p>Build multiple crop and animal-product income opportunities over time.</p></div></div>
+  <div class="impact-item"><span class="check">✓</span><div><b>Community benefits</b><p>Create potential work opportunities and share practical agricultural knowledge.</p></div></div>
+ </div></div>
+ <div class="land-visual"><h3>Proposed land allocation</h3><p>Preliminary planning figures from the project proposal.</p>
+  <div class="bar-row"><div class="bar-meta"><span>Maize</span><b>10 acres</b></div><div class="bar"><i style="width:29.4%"></i></div></div>
+  <div class="bar-row"><div class="bar-meta"><span>Cassava</span><b>8 acres</b></div><div class="bar"><i style="width:23.5%"></i></div></div>
+  <div class="bar-row"><div class="bar-meta"><span>Beans</span><b>5 acres</b></div><div class="bar"><i style="width:14.7%"></i></div></div>
+  <div class="bar-row"><div class="bar-meta"><span>Grazing & fodder</span><b>6 acres</b></div><div class="bar"><i style="width:17.6%"></i></div></div>
+  <div class="bar-row"><div class="bar-meta"><span>Livestock infrastructure</span><b>2 acres</b></div><div class="bar"><i style="width:5.9%"></i></div></div>
+  <div class="bar-row"><div class="bar-meta"><span>Future expansion & rotation</span><b>3 acres</b></div><div class="bar"><i style="width:8.8%"></i></div></div>
+  <div class="land-note">Total: 34 acres · Proposed allocation, subject to on-farm assessment.</div>
+ </div>
+</div></section>
+<section id="plan" style="background:#fbfcf9"><div class="wrap">
+ <div class="section-head"><span class="kicker">12-month implementation</span><h2>A phased approach to strengthening the farm.</h2><p>Activities will be implemented progressively, with records kept on inputs, production, animal health, expenditure and sales.</p></div>
+ <div class="timeline">
+  <div class="phase"><span>Months 1–2</span><h3>Prepare & procure</h3><p>Assess activities, prepare land, source inputs, livestock and poultry, and improve facilities.</p></div>
+  <div class="phase"><span>Months 3–4</span><h3>Establish production</h3><p>Plant crops, introduce additional animals where funded and establish management records.</p></div>
+  <div class="phase"><span>Months 5–8</span><h3>Manage & develop</h3><p>Monitor crops, provide animal care, manage pests and diseases, and improve infrastructure.</p></div>
+  <div class="phase"><span>Months 9–12</span><h3>Harvest & evaluate</h3><p>Harvest and store produce, explore markets, review performance and report on progress.</p></div>
+ </div>
+</div></section>
+<section class="cta" id="contact"><div class="wrap cta-inner">
+ <div><span class="eyebrow">Work with FarmLoop</span><h2>Help grow a stronger<br>agricultural future.</h2><p>We welcome conversations with grant makers, agricultural organizations, technical partners, input suppliers and individuals interested in supporting sustainable rural agriculture in Iganga.</p></div>
+ <a class="btn" href="mailto:kiyembaisaac001@gmail.com?subject=FarmLoop%20Iganga%20Partnership%20Enquiry">Contact the project</a>
+</div></section>
+</main>
+<footer><div class="wrap">
+ <div class="footer-grid"><div><div class="footer-brand">🌱 FarmLoop Iganga</div><p>Integrated agriculture for food, livelihoods and resilience.</p><p>Bulowoza Village, Iganga District, Eastern Uganda</p></div>
+ <div><div class="footer-brand">Get in touch</div><p><a href="tel:+256789986603">+256 789 986 603</a></p><p><a href="mailto:kiyembaisaac001@gmail.com">kiyembaisaac001@gmail.com</a></p></div>
+ <div class="footer-links"><a href="#about">About</a><a href="#farming">Our farming</a><a href="#sustainability">Sustainability</a><a href="#contact">Contact</a></div></div>
+ <div class="copyright">© <span id="year"></span> FarmLoop Iganga. Project information reflects the current proposal and planned activities.</div>
+</div></footer>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
